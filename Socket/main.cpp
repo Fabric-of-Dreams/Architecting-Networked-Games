@@ -28,8 +28,8 @@
 // and IP-address 65.254.248.180
 int main()
 {
-    WSADATA WSAData;
-    WSAStartup(MAKEWORD(2, 2), &WSAData);
+    //WSADATA WSAData;
+    //WSAStartup(MAKEWORD(2, 2), &WSAData);
 
     sockaddr_in myAddr;
 
@@ -47,7 +47,7 @@ int main()
     myAddr.sin_addr.S_un.S_un_b.s_b3 = 248;
     myAddr.sin_addr.S_un.S_un_b.s_b4 = 180;
 
-    WSACleanup();
+    //WSACleanup();
 
     std::cout << "Hello World!\n";
 }
